@@ -49,7 +49,7 @@ group :development, :test do
   # annotate
   gem 'annotate', git: 'https://github.com/ctran/annotate_models.git'
 
-  gem 'dotenv'
+  gem 'dotenv-rails', require: 'dotenv/rails-now'
 end
 
 group :development do
