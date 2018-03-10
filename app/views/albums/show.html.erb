@@ -1,0 +1,40 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-color--grey-100">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><%= @album.title %></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title"><%= @album.title %></span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  <div class="page-content main-box mdl-color-text--grey-700 mdl-base">
+    <table>
+      <tr>
+        <td>日付</td>
+        <td>いつ</td>
+      </tr>
+      <tr>
+        <td>場所</td>
+        <td>どこどこ</td>
+      </tr>
+      <tr>
+        <td>メンバー</td>
+        <td>誰・誰・誰・誰</td>
+      </tr>
+    </table>
+    <div class="link-area">
+      <%= link_to "Link by 誰" %>
+    </div>
+  </div>
+  </main>
+</div>

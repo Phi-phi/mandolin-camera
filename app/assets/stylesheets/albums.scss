@@ -1,3 +1,22 @@
 // Place all the styles related to the albums controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-box {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.album-card {
+  margin: 30px;
+}
+
+.jump-btn {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.link-area {
+  font-size: 22px;
+  margin-top: 40px;
+}

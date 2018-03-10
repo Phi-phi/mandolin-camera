@@ -1,0 +1,26 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    </div>
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      <h3>投稿アルバム一覧</h3>
+    </div>
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    </div>
+  </header>
+  <div class="main-box">
+    <% @albums.each do |alb| %>
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp album-crad">
+        <div class="mdl-card__title">
+          <h4 class="mdl-card__title-text"><%= alb.title %></h4>
+        </div>
+        <div class="mdl-card__supporting-text">
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <%= link_to 'Show', alb, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" %>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+</div>
